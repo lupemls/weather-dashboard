@@ -18,7 +18,7 @@
     <h1>Weather Dashboard</h1>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3" id="cities">
+            <div class="col-md-3 column" id="cities">
                 <h5>Search for a City</h5>
 
                 <form class="form-inline">
@@ -27,17 +27,47 @@
                     <!-- </div> -->
                     <button type="submit" class="btn btn-primary">&#x1F50E;</button>
                 </form>
+                <div id = 'city-buttons'></div>
             </div>
-            <div class="col-sm-9" id="weather">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">
-                            <div id = 'temp'></div>
-                            <div id = 'humidity'></div>
-                            <div id = 'wind'></div>
-                            <div id = 'uv'></div>
-                        </p>
+            <div class="col-md-9 column">
+                <div id="current-weather">
+                    <h5 id="title"></h5>
+                    <p class="text">
+                        <div id='temp'></div>
+                        <div id='humidity'></div>
+                        <div id='wind'></div>
+                        <div id='uv'></div>
+                    </p>
+                </div>
+                <h5>5-Day Forecast:</h5>
+                <div class="card day">
+                    <div class="card-body 1">
+                        <!-- <h5 class="card-title"></h5>
+                        <p class="card-text"></p> -->
+                    </div>
+                </div>
+                <div class="card day">
+                    <div class="card-body 2">
+                        <!-- <h5 class="card-title"></h5>
+                        <p class="card-text"></p> -->
+                    </div>
+                </div>
+                <div class="card day">
+                    <div class="card-body 3">
+                        <!-- <h5 class="card-title"></h5>
+                        <p class="card-text"></p> -->
+                    </div>
+                </div>
+                <div class="card day">
+                    <div class="card-body 4">
+                        <!-- <h5 class="card-title"></h5>
+                        <p class="card-text"></p> -->
+                    </div>
+                </div>
+                <div class="card day">
+                    <div class="card-body 5">
+                        <!-- <h5 class="card-title"></h5>
+                        <p class="card-text"></p> -->
                     </div>
                 </div>
             </div>
